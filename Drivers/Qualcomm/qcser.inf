@@ -1,0 +1,146 @@
+; Windows XP Virtual Serial Port Setup File
+; Copyright (c) 2006-2007 Qualcomm Incorporated
+; Manufacturer: Qualcomm Incorporated
+;
+
+[Version]
+signature  = "$WINDOWS NT$"
+Class      = Ports
+Provider   = %QUALCOMM%
+ClassGuid  = {4D36E978-E325-11CE-BFC1-08002BE10318}
+DriverVer  = 10/25/2011,2.0.3.6
+Catalogfile = qcusbser.cat
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[SourceDisksNames]
+  1000 = %QcomSrcDisk%,"",,
+
+[SourceDisksFiles]
+  qcusbser.sys = 1000
+
+[Manufacturer]
+%QUALCOMM% = QcomSerialPort, NTia64, NTamd64
+
+[QcomSerialPort]
+%QcomDevice01% = QportInstall00, USB\VID_04E8&PID_9002
+;%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_9002
+%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_3200&MI_01
+%QcomDevice6k%   = QportInstall00, USB\VID_05C6&PID_6000&MI_01
+%QcomDeviceNMEA% = QportInstall00, USB\VID_05C6&PID_6000&MI_02
+%QcomDevice7k%   = QportInstall00, USB\VID_05C6&PID_7000&MI_01
+%QcomDevice7k1%  = QportInstall00, USB\VID_05C6&PID_7001&MI_00
+%QcomDevice7k3%  = QportInstall00, USB\VID_05C6&PID_7001&MI_03
+%QcomDevice70020%  = QportInstall00, USB\VID_05C6&PID_7002&MI_00
+%QcomDevice70023%  = QportInstall00, USB\VID_05C6&PID_7002&MI_03
+%QcomDevice70024%  = QportInstall00, USB\VID_05C6&PID_7002&MI_04
+%QcomDevice71010%  = QportInstall00, USB\VID_05C6&PID_7101&MI_00
+%QcomDevice71015%  = QportInstall00, USB\VID_05C6&PID_7101&MI_05
+%QcomDevice71020%  = QportInstall00, USB\VID_05C6&PID_7102&MI_00
+%QcomDevice71025%  = QportInstall00, USB\VID_05C6&PID_7102&MI_05
+%QcomDevice71026%  = QportInstall00, USB\VID_05C6&PID_7102&MI_06
+%QcomDevice80000%  = QportInstall00, USB\VID_05C6&PID_8000&MI_00
+%QcomDevice80002%  = QportInstall00, USB\VID_05C6&PID_8000&MI_02
+%QcomDevice80010%  = QportInstall00, USB\VID_05C6&PID_8001&MI_00
+%QcomDevice80012%  = QportInstall00, USB\VID_05C6&PID_8001&MI_02
+%QcomDevice80020%  = QportInstall00, USB\VID_05C6&PID_8002&MI_00
+%QcomDevice80022%  = QportInstall00, USB\VID_05C6&PID_8002&MI_02
+%QcomDevice90080%  = QportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90000%  = QportInstall00, USB\VID_05C6&PID_9000&MI_00
+%QcomDevice90001%  = QportInstall00, USB\VID_05C6&PID_9000&MI_01
+%QcomDevice90010%  = QportInstall00, USB\VID_05C6&PID_9001&MI_00
+%QcomDevice90011%  = QportInstall00, USB\VID_05C6&PID_9001&MI_01
+%QcomDevice90020%  = QportInstall00, USB\VID_05C6&PID_9002&MI_00
+%QcomDevice90021%  = QportInstall00, USB\VID_05C6&PID_9002&MI_01
+
+[QcomSerialPort.NTia64]
+;%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_9002
+%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_3200&MI_01
+%QcomDevice6k%   = QportInstall00, USB\VID_05C6&PID_6000&MI_01
+%QcomDeviceNMEA% = QportInstall00, USB\VID_05C6&PID_6000&MI_02
+%QcomDevice7k%   = QportInstall00, USB\VID_05C6&PID_7000&MI_01
+%QcomDevice7k1%  = QportInstall00, USB\VID_05C6&PID_7001&MI_00
+%QcomDevice7k3%  = QportInstall00, USB\VID_05C6&PID_7001&MI_03
+%QcomDevice70020%  = QportInstall00, USB\VID_05C6&PID_7002&MI_00
+%QcomDevice70023%  = QportInstall00, USB\VID_05C6&PID_7002&MI_03
+%QcomDevice70024%  = QportInstall00, USB\VID_05C6&PID_7002&MI_04
+%QcomDevice71010%  = QportInstall00, USB\VID_05C6&PID_7101&MI_00
+%QcomDevice71015%  = QportInstall00, USB\VID_05C6&PID_7101&MI_05
+%QcomDevice71020%  = QportInstall00, USB\VID_05C6&PID_7102&MI_00
+%QcomDevice71025%  = QportInstall00, USB\VID_05C6&PID_7102&MI_05
+%QcomDevice71026%  = QportInstall00, USB\VID_05C6&PID_7102&MI_06
+%QcomDevice80000%  = QportInstall00, USB\VID_05C6&PID_8000&MI_00
+%QcomDevice80002%  = QportInstall00, USB\VID_05C6&PID_8000&MI_02
+%QcomDevice80010%  = QportInstall00, USB\VID_05C6&PID_8001&MI_00
+%QcomDevice80012%  = QportInstall00, USB\VID_05C6&PID_8001&MI_02
+%QcomDevice80020%  = QportInstall00, USB\VID_05C6&PID_8002&MI_00
+%QcomDevice80022%  = QportInstall00, USB\VID_05C6&PID_8002&MI_02
+%QcomDevice90080%  = QportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90000%  = QportInstall00, USB\VID_05C6&PID_9000&MI_00
+%QcomDevice90001%  = QportInstall00, USB\VID_05C6&PID_9000&MI_01
+%QcomDevice90010%  = QportInstall00, USB\VID_05C6&PID_9001&MI_00
+%QcomDevice90011%  = QportInstall00, USB\VID_05C6&PID_9001&MI_01
+%QcomDevice90020%  = QportInstall00, USB\VID_05C6&PID_9002&MI_00
+%QcomDevice90021%  = QportInstall00, USB\VID_05C6&PID_9002&MI_01
+
+[QcomSerialPort.NTamd64]
+;%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_9002
+%QcomDevice00% = QportInstall00, USB\VID_05C6&PID_3200&MI_01
+%QcomDevice6k%   = QportInstall00, USB\VID_05C6&PID_6000&MI_01
+%QcomDeviceNMEA% = QportInstall00, USB\VID_05C6&PID_6000&MI_02
+%QcomDevice7k%   = QportInstall00, USB\VID_05C6&PID_7000&MI_01
+%QcomDevice7k1%  = QportInstall00, USB\VID_05C6&PID_7001&MI_00
+%QcomDevice7k3%  = QportInstall00, USB\VID_05C6&PID_7001&MI_03
+%QcomDevice70020%  = QportInstall00, USB\VID_05C6&PID_7002&MI_00
+%QcomDevice70023%  = QportInstall00, USB\VID_05C6&PID_7002&MI_03
+%QcomDevice70024%  = QportInstall00, USB\VID_05C6&PID_7002&MI_04
+%QcomDevice71010%  = QportInstall00, USB\VID_05C6&PID_7101&MI_00
+%QcomDevice71015%  = QportInstall00, USB\VID_05C6&PID_7101&MI_05
+%QcomDevice71020%  = QportInstall00, USB\VID_05C6&PID_7102&MI_00
+%QcomDevice71025%  = QportInstall00, USB\VID_05C6&PID_7102&MI_05
+%QcomDevice71026%  = QportInstall00, USB\VID_05C6&PID_7102&MI_06
+%QcomDevice80000%  = QportInstall00, USB\VID_05C6&PID_8000&MI_00
+%QcomDevice80002%  = QportInstall00, USB\VID_05C6&PID_8000&MI_02
+%QcomDevice80010%  = QportInstall00, USB\VID_05C6&PID_8001&MI_00
+%QcomDevice80012%  = QportInstall00, USB\VID_05C6&PID_8001&MI_02
+%QcomDevice80020%  = QportInstall00, USB\VID_05C6&PID_8002&MI_00
+%QcomDevice80022%  = QportInstall00, USB\VID_05C6&PID_8002&MI_02
+%QcomDevice90080%  = QportInstall00, USB\VID_05C6&PID_9008
+%QcomDevice90000%  = QportInstall00, USB\VID_05C6&PID_9000&MI_00
+%QcomDevice90001%  = QportInstall00, USB\VID_05C6&PID_9000&MI_01
+%QcomDevice90010%  = QportInstall00, USB\VID_05C6&PID_9001&MI_00
+%QcomDevice90011%  = QportInstall00, USB\VID_05C6&PID_9001&MI_01
+%QcomDevice90020%  = QportInstall00, USB\VID_05C6&PID_9002&MI_00
+%QcomDevice90021%  = QportInstall00, USB\VID_05C6&PID_9002&MI_01
+
+[QportInstall00.NT]
+CopyFiles=QCUsbInfFiles, QCUsbDriverFiles
+AddReg = All00, AddReg
+
+[QCUsbInfFiles]
+qcusb.inf
+
+[QCUsbDriverFiles]
+qcusbser.sys
+
+[DestinationDirs]
+QCUsbInfFiles = 17
+DefaultDestDir = 12
+
+[QportInstall00.NT.Services]
+Include=qcusb.inf
+Needs=QC_PORT_Device.NT.Services
+
+[All00]
+HKR,,NTMPDriver,,qcusbser.sys
+
+[AddReg]
+HKR,,PortSubClass,1,01
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Strings]
+QcomSrcDisk = "Qualcomm USB Driver Disk"
+QUALCOMM   = "Qualcomm Incorporated"
+QcomDevice00 = "Qualcomm Diagnostics Interface 3200"
+QcomDevice01 = "Samsung MSM7xxx base HSU Interface"
